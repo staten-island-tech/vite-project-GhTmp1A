@@ -108,6 +108,8 @@ button:focus-visible {
 }
 
 .header-animation{
+  color: white;
+  background-color: red;
   font-size: 60px;
   text-align: center;
 }
