@@ -1,12 +1,12 @@
 import "../styles/style.css";
-import javascriptLogo from "/javascript.svg";
+/* import javascriptLogo from "/javascript.svg"; */
 import { setupCounter } from "../counter.js";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
 
-document.querySelector("#app").innerHTML = `
+/* document.querySelector("#app").innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -22,6 +22,6 @@ document.querySelector("#app").innerHTML = `
       Click on the Vite logo to learn more
     </p>
   </div>
-`;
+`; */
 
-setupCounter(document.querySelector("#counter"));
+/* setupCounter(document.querySelector("#counter")); */
