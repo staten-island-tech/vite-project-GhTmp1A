@@ -2,6 +2,7 @@ import "../styles/style.css";
 /* import javascriptLogo from "/javascript.svg"; */
 import { setupCounter } from "../counter.js";
 import AOS from "aos";
+import "./mercenaries";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
