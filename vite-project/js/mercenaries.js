@@ -109,3 +109,101 @@ const data = [
     Range: ["Short"],
   },
 ];
+
+const redata = [
+  {
+    name: { english: "Winter 2022 Cosmetic Case" },
+    kind: ["Seasonal"],
+    stats: {
+      collection: "Winter 2022",
+      dropped:
+        "This crate was dropped after a certain amount of time while playing the game during Smismass!",
+      series: 139,
+    },
+    description: "Description",
+    Status: ["Active"],
+  },
+  {
+    name: { english: "Aqua Summer 2013 Cooler" },
+    kind: ["Seasonal"],
+    stats: {
+      collection: "Summer 2013",
+      dropped:
+        "This cooler can be randomly obtained by using a Summer Claim Check and contains one approved set of the community-contributed Gold Star items.  An Aqua Summer 2013 Cooler Key is needed to open it.",
+      series: 66,
+    },
+    description: "Description",
+    Status: ["Active"],
+  },
+  {
+    name: { english: "Jungle Jackpot War Paint Case" },
+    kind: ["Year-round"],
+    stats: {
+      collection: "Jungle Inferno",
+      dropped: "Mercenary Park Gift Shop Exclusive",
+      series: 109,
+    },
+    description: "Description",
+    Status: ["Active"],
+  },
+  {
+    name: { english: "Ghoulish Gains Case" },
+    kind: ["Seasonal"],
+    stats: {
+      collection: "Ghoulish Gains Collection",
+      dropped:
+        "This case was randomly dropped to players during the Scream Fortress 2022 update.",
+      series: 137,
+    },
+    description: "Description",
+    Status: ["Retired"],
+  },
+  {
+    name: { english: "Robo Community Crate" },
+    kind: ["Year-round"],
+    stats: {
+      collection: "Robo Community",
+      dropped:
+        "This crate was randomly dropped to players during the Robotic Boogaloo community update.",
+      series: 58,
+    },
+    description: "Description",
+    Status: ["Retired"],
+  },
+  {
+    name: { english: "Salvaged Mannco Supply Crate" },
+    kind: ["Year-round"],
+    stats: {
+      collection: "Salvaged",
+      dropped:
+        "These particular crates were given to players much less frequently than a normal Mann Co. Supply Crate.",
+      series: 30,
+    },
+    description: "Description",
+    Status: ["Retired"],
+  },
+  {
+    name: { english: "Mannco Audition Reel" },
+    kind: ["Year-round"],
+    stats: {
+      collection: "Love and War",
+      dropped:
+        "This crate was randomly dropped to players during the Robotic Boogaloo community update.",
+      series: "seriesless",
+    },
+    description: "Description",
+    Status: ["Retired"],
+  },
+  {
+    name: { english: "Unlocked Cosmetic Crate Medic" },
+    kind: ["Year-round"],
+    stats: {
+      collection: "Mannco Store",
+      dropped:
+        "This crate can be bought from the mannco store at any time. It does not require a key to open.",
+      series: "seriesless",
+    },
+    description: "Description",
+    Status: ["Active"],
+  },
+];
