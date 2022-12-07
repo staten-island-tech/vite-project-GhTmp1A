@@ -2,7 +2,7 @@ import "../styles/style.css";
 /* import javascriptLogo from "/javascript.svg"; */
 import { setupCounter } from "../counter.js";
 import AOS from "aos";
-import "./mercenaries";
+import "./Crates";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
@@ -26,3 +26,29 @@ AOS.init();
 `; */
 
 /* setupCounter(document.querySelector("#counter")); */
+
+const DOMSelectors = {
+  yearround: document.querySelector("#year-round"),
+  seasonal: documents.querySelector("#seasonal"),
+  active: documents.querySelector("#active"),
+  retired: documents.querySelector("#retired"),
+  all: documents.querySelector("#all"),
+  display: documents.querySelector("display"),
+};
+
+data.forEach((data) =>
+  div.insertAdjacentHTML("afterend", `<p>${data.name}</p>`)
+);
+
+/* DOMSelectors.DOMSelectors.display.insertAdjacentHTML(
+  "afterend",
+  `
+<div id="crate">
+<h2 classs="cratename">${data.name}</h2>
+<p class="cratestats">${data.stats.collection}
+${data.stats.dropped}
+${data.stats.series}</p>
+</div>
+`
+);
+ */

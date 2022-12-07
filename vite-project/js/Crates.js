@@ -1,4 +1,4 @@
-const data = [
+/* const data = [
   {
     name: { english: "Scout" },
     class: ["Offensive"],
@@ -109,10 +109,10 @@ const data = [
     Range: ["Short"],
   },
 ];
-
-const redata = [
+ */
+const data = [
   {
-    name: { english: "Winter 2022 Cosmetic Case" },
+    name: "Winter 2022 Cosmetic Case",
     kind: ["Seasonal"],
     stats: {
       collection: "Winter 2022",
@@ -124,7 +124,7 @@ const redata = [
     Status: ["Active"],
   },
   {
-    name: { english: "Aqua Summer 2013 Cooler" },
+    name: "Aqua Summer 2013 Cooler",
     kind: ["Seasonal"],
     stats: {
       collection: "Summer 2013",
@@ -136,7 +136,7 @@ const redata = [
     Status: ["Active"],
   },
   {
-    name: { english: "Jungle Jackpot War Paint Case" },
+    name: "Jungle Jackpot War Paint Case",
     kind: ["Year-round"],
     stats: {
       collection: "Jungle Inferno",
@@ -147,7 +147,7 @@ const redata = [
     Status: ["Active"],
   },
   {
-    name: { english: "Ghoulish Gains Case" },
+    name: "Ghoulish Gains Case",
     kind: ["Seasonal"],
     stats: {
       collection: "Ghoulish Gains Collection",
@@ -159,7 +159,7 @@ const redata = [
     Status: ["Retired"],
   },
   {
-    name: { english: "Robo Community Crate" },
+    name: "Robo Community Crate",
     kind: ["Year-round"],
     stats: {
       collection: "Robo Community",
@@ -171,7 +171,7 @@ const redata = [
     Status: ["Retired"],
   },
   {
-    name: { english: "Salvaged Mannco Supply Crate" },
+    name: "Salvaged Mannco Supply Crate",
     kind: ["Year-round"],
     stats: {
       collection: "Salvaged",
@@ -183,7 +183,7 @@ const redata = [
     Status: ["Retired"],
   },
   {
-    name: { english: "Mannco Audition Reel" },
+    name: "Mannco Audition Reel",
     kind: ["Year-round"],
     stats: {
       collection: "Love and War",
@@ -195,7 +195,7 @@ const redata = [
     Status: ["Retired"],
   },
   {
-    name: { english: "Unlocked Cosmetic Crate Medic" },
+    name: "Unlocked Cosmetic Crate Medic",
     kind: ["Year-round"],
     stats: {
       collection: "Mannco Store",
