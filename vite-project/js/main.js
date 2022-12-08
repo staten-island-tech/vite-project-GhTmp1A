@@ -4,6 +4,7 @@ import { setupCounter } from "../counter.js";
 import AOS from "aos";
 import "./Crates";
 import "aos/dist/aos.css"; // You can also use <link> for styles
+import { data } from "./Crates";
 // ..
 AOS.init();
 
@@ -29,16 +30,22 @@ AOS.init();
 
 const DOMSelectors = {
   yearround: document.querySelector("#year-round"),
-  seasonal: documents.querySelector("#seasonal"),
-  active: documents.querySelector("#active"),
-  retired: documents.querySelector("#retired"),
-  all: documents.querySelector("#all"),
-  display: documents.querySelector("display"),
+  seasonal: document.querySelector("#seasonal"),
+  active: document.querySelector("#active"),
+  retired: document.querySelector("#retired"),
+  all: document.querySelector("#all"),
+  display: document.querySelector("display"),
+  card: document.querySelector("#cratecards"),
 };
 
-data.forEach((data) =>
-  div.insertAdjacentHTML("afterend", `<p>${data.name}</p>`)
+data.forEach((element) =>
+  DOMSelectors.card.insertAdjacentHTML(
+    "afterend",
+    `<h2 class="cratetitle">${element.name}</h2>   <h4> Collection: ${element.collection}</h4> <h5>${element.dropped}</h5> <h5> Crate series: ${element.series}</h5> <p class="cratedesc">${element.description}</p>`
+  )
 );
+
+console.log(data);
 
 /* DOMSelectors.DOMSelectors.display.insertAdjacentHTML(
   "afterend",
