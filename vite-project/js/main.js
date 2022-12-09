@@ -41,11 +41,24 @@ const DOMSelectors = {
 data.forEach((element) =>
   DOMSelectors.card.insertAdjacentHTML(
     "afterend",
-    `<h2 class="cratetitle">${element.name}</h2>   <h4> Collection: ${element.collection}</h4> <h5>${element.dropped}</h5> <h5> Crate series: ${element.series}</h5> <p class="cratedesc">${element.description}</p>`
+    `<h2 class="cratetitle">${element.name}</h2> <img src="${element.url}" alt="">  <h4> Collection: ${element.collection}</h4> <h5>${element.dropped}</h5> <h5> Crate series: ${element.series}</h5> <p class="cratedesc">${element.description}</p>`
   )
 );
 
-console.log(data);
+const crates = {
+  //  allcrates: null,
+  seasonalcrates: function () {
+    data
+      .filter((seasonal) => seasonal.kind === "Seasonal")
+      .forEach((seasonalcrate) => {
+        console.log(seasonalcrate.name);
+      });
+  },
+};
+
+DOMSelectors.seasonal.addEventListener("click", function () {
+  crates.seasonalcrates;
+});
 
 /* DOMSelectors.DOMSelectors.display.insertAdjacentHTML(
   "afterend",
