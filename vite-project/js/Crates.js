@@ -142,7 +142,8 @@ const data = [
     collection: "Jungle Inferno",
     dropped: "Mercenary Park Gift Shop Exclusive",
     series: 109,
-    description: "This",
+    description:
+      "This War Paint Case can be bought from the Mercenary Park Gift Shop for a certain amount of tickets and contains one war paint (appliable weapon skin) from the Jungle Jackpot Collection. A Jungle Jackpot War Paint Key is requried to open the",
     Status: "Active",
     url: "https://wiki.teamfortress.com/w/images/e/eb/Backpack_Jungle_Jackpot_War_Paint_Case.png",
   },
