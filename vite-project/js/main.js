@@ -34,7 +34,7 @@ const DOMSelectors = {
   active: document.querySelector("#active"),
   retired: document.querySelector("#retired"),
   all: document.querySelector("#all"),
-  display: document.querySelector("display"),
+  display: document.getElementById("display "),
   card: document.querySelector("#cratecards"),
 };
 
@@ -45,7 +45,7 @@ data.forEach((element) =>
   )
 );
 
-const crates = {
+/* const crates = {
   //  allcrates: null,
   seasonalcrates: function () {
     data
@@ -54,10 +54,21 @@ const crates = {
         console.log(seasonalcrate.name);
       });
   },
-};
+}; */
+
+function seasonalcrates() {
+  let seasonalcrates = data.filter((element) => element.kind === "Seasonal");
+  DOMSelectors.card.innerHTML = "";
+  seasonalcrates.forEach((element) =>
+    DOMSelectors.card.innerHTML(
+      "afterend",
+      `<h2 class="cratetitle">${element.name}</h2> <img src="${element.url}" alt="">  <h4> Collection: ${element.collection}</h4> <h5>${element.dropped}</h5> <h5> Crate series: ${element.series}</h5> <p class="cratedesc">${element.description}</p>`
+    )
+  );
+}
 
 DOMSelectors.seasonal.addEventListener("click", function () {
-  crates.seasonalcrates;
+  seasonalcrates();
 });
 
 /* DOMSelectors.DOMSelectors.display.insertAdjacentHTML(
