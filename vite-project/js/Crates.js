@@ -118,7 +118,8 @@ const data = [
     dropped:
       "This crate was dropped after a certain amount of time while playing the game during Smismass!",
     series: 139,
-    description: "Description",
+    description:
+      "During Smismass (a seasonal winter event in tf2), this crate would drop to players during gameplay from December 5th 2022 to Janruary 7th, 2023. Once Smismass has ended, these crates will no longer drop, and keys can no longer be bought from the Mannco Store. (Although it is still possible to purchase these crates and keys from the steam community market). This crate would drop items from the Winter 2022 collection.",
     Status: "Active",
     url: "https://wiki.teamfortress.com/w/images/7/7a/Backpack_Winter_2022_Cosmetic_Case.png",
   },
@@ -129,7 +130,8 @@ const data = [
     dropped:
       "This cooler can be randomly obtained by using a Summer Claim Check and contains one approved set of the community-contributed Gold Star items.  An Aqua Summer 2013 Cooler Key is needed to open it.",
     series: 66,
-    description: "Description",
+    description:
+      "This crate was released during the Summer 2013 update, and could be obtained through the use of a Summer Claim Check. A seperate Aqua Summer 2013 Cooler Key needs to be bought to open it. These crates are no longer purchasable in the Mannco store or anywhere in-game, but can be found on the steam community market. This crate is one of 8 crates that can be obtained from a Summer Claim Check.",
     Status: "Active",
     url: "https://wiki.teamfortress.com/w/images/f/f2/Backpack_Aqua_Summer_2013_Cooler.png",
   },
@@ -140,7 +142,7 @@ const data = [
     collection: "Jungle Inferno",
     dropped: "Mercenary Park Gift Shop Exclusive",
     series: 109,
-    description: "Description",
+    description: "This",
     Status: "Active",
     url: "https://wiki.teamfortress.com/w/images/e/eb/Backpack_Jungle_Jackpot_War_Paint_Case.png",
   },
