@@ -40,7 +40,7 @@ const DOMSelectors = {
 
 data.forEach((element) =>
   DOMSelectors.card.insertAdjacentHTML(
-    "afterend",
+    "beforeend",
     `<h2 class="cratetitle">${element.name}</h2> <img src="${element.url}" alt="">  <h4> Collection: ${element.collection}</h4> <h5>${element.dropped}</h5> <h5> Crate series: ${element.series}</h5> <p class="cratedesc">${element.description}</p>`
   )
 );
@@ -58,32 +58,33 @@ data.forEach((element) =>
 
 const crates = {
   seasonalcrates: function () {
-    data
-      .filter((element) => element.kind.includes(`Seasonal`))
-      .forEach((element) => {
-        console.log(element.name);
-        DOMSelectors.card.innerHTML = "";
-        DOMSelectors.card.insertAdjacentHTML(
-          "afterend",
-          `
+    let season = data.filter((element) => element.kind.includes(`Seasonal`));
+    DOMSelectors.card.innerHTML = "";
+    season.forEach((element) => {
+      console.log(element.name);
+      DOMSelectors.card.insertAdjacentHTML(
+        "beforeend",
+        `
         <h2 class="cratetitle">${element.name}</h2> 
         `
-        );
-      });
+      );
+    });
   },
   yearroundcrates: function () {
-    data
-      .filter((element) => element.kind.includes(`Year-round`))
-      .forEach((element) => {
-        console.log(element.name);
-        DOMSelectors.card.innerHTML = "";
-        DOMSelectors.card.insertAdjacentHTML(
-          "afterend",
-          `
+    let yearround = data.filter((element) =>
+      element.kind.includes(`Year-round`)
+    );
+    DOMSelectors.card.innerHTML = "";
+    yearround.forEach((element) => {
+      console.log(element.name);
+
+      DOMSelectors.card.insertAdjacentHTML(
+        "beforeend",
+        `
         <h2 class="cratetitle">${element.name}</h2> 
         `
-        );
-      });
+      );
+    });
   },
   activecrates: function () {
     data
@@ -92,7 +93,7 @@ const crates = {
         console.log(element.name);
         DOMSelectors.card.innerHTML = "";
         DOMSelectors.card.insertAdjacentHTML(
-          "afterend",
+          "beforeend",
           `
         <h2 class="cratetitle">${element.name}</h2> 
         `
@@ -106,7 +107,7 @@ const crates = {
         console.log(element.name);
         DOMSelectors.card.innerHTML = "";
         DOMSelectors.card.insertAdjacentHTML(
-          "afterend",
+          "beforeend",
           `
         <h2 class="cratetitle">${element.name}</h2> 
         `
@@ -157,3 +158,13 @@ ${data.stats.series}</p>
 `
 );
  */
+
+function mightwork() {
+  let monkey = data.filter((element) => element.kind.includes(`Seasonal`));
+  DOMSelectors.card.innerHTML = "";
+  monkey.forEach((element) =>
+    DOMSelectors.card.insertAdjacentHTML("beforeend", `<p>${element.name}</p>`)
+  );
+}
+
+mightwork();
