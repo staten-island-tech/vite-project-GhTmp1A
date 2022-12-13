@@ -56,7 +56,81 @@ data.forEach((element) =>
   },
 }; */
 
-function seasonalcrates() {
+const crates = {
+  seasonalcrates: function () {
+    data
+      .filter((element) => element.kind.includes(`Seasonal`))
+      .forEach((element) => {
+        console.log(element.name);
+        DOMSelectors.card.innerHTML = "";
+        DOMSelectors.card.insertAdjacentHTML(
+          "afterend",
+          `
+        <h2 class="cratetitle">${element.name}</h2> 
+        `
+        );
+      });
+  },
+  yearroundcrates: function () {
+    data
+      .filter((element) => element.kind.includes(`Year-round`))
+      .forEach((element) => {
+        console.log(element.name);
+        DOMSelectors.card.innerHTML = "";
+        DOMSelectors.card.insertAdjacentHTML(
+          "afterend",
+          `
+        <h2 class="cratetitle">${element.name}</h2> 
+        `
+        );
+      });
+  },
+  activecrates: function () {
+    data
+      .filter((element) => element.status.includes(`Active`))
+      .forEach((element) => {
+        console.log(element.name);
+        DOMSelectors.card.innerHTML = "";
+        DOMSelectors.card.insertAdjacentHTML(
+          "afterend",
+          `
+        <h2 class="cratetitle">${element.name}</h2> 
+        `
+        );
+      });
+  },
+  retiredcrates: function () {
+    data
+      .filter((element) => element.status.includes(`Retired`))
+      .forEach((element) => {
+        console.log(element.name);
+        DOMSelectors.card.innerHTML = "";
+        DOMSelectors.card.insertAdjacentHTML(
+          "afterend",
+          `
+        <h2 class="cratetitle">${element.name}</h2> 
+        `
+        );
+      });
+  },
+};
+
+DOMSelectors.seasonal.addEventListener("click", function () {
+  crates.seasonalcrates();
+});
+
+DOMSelectors.yearround.addEventListener("click", function () {
+  crates.yearroundcrates();
+});
+
+DOMSelectors.active.addEventListener("click", function () {
+  crates.activecrates();
+});
+
+DOMSelectors.retired.addEventListener("click", function () {
+  crates.retiredcrates();
+});
+/* function seasonalcrates() {
   let seasonalcrates = data.filter((element) => element.kind === "Seasonal");
   DOMSelectors.card.innerHTML = "";
   seasonalcrates.forEach((element) =>
@@ -69,7 +143,7 @@ function seasonalcrates() {
 
 DOMSelectors.seasonal.addEventListener("click", function () {
   seasonalcrates();
-});
+}); */
 
 /* DOMSelectors.DOMSelectors.display.insertAdjacentHTML(
   "afterend",
