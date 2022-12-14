@@ -87,32 +87,31 @@ const crates = {
     });
   },
   activecrates: function () {
-    data
-      .filter((element) => element.status.includes(`Active`))
-      .forEach((element) => {
-        console.log(element.name);
-        DOMSelectors.card.innerHTML = "";
-        DOMSelectors.card.insertAdjacentHTML(
-          "beforeend",
-          `
+    let active = data.filter((element) => element.status.includes(`Active`));
+    DOMSelectors.card.innerHTML = "";
+    active.forEach((element) => {
+      console.log(element.name);
+
+      DOMSelectors.card.insertAdjacentHTML(
+        "beforeend",
+        `
         <h2 class="cratetitle">${element.name}</h2> 
         `
-        );
-      });
+      );
+    });
   },
   retiredcrates: function () {
-    data
-      .filter((element) => element.status.includes(`Retired`))
-      .forEach((element) => {
-        console.log(element.name);
-        DOMSelectors.card.innerHTML = "";
-        DOMSelectors.card.insertAdjacentHTML(
-          "beforeend",
-          `
+    let retired = data.filter((element) => element.status.includes(`Retired`));
+    DOMSelectors.card.innerHTML = "";
+    retired.forEach((element) => {
+      console.log(element.name);
+      DOMSelectors.card.insertAdjacentHTML(
+        "beforeend",
+        `
         <h2 class="cratetitle">${element.name}</h2> 
         `
-        );
-      });
+      );
+    });
   },
 };
 
