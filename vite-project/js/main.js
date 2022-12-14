@@ -38,12 +38,12 @@ const DOMSelectors = {
   card: document.querySelector("#cratecards"),
 };
 
-data.forEach((element) =>
+/* data.forEach((element) =>
   DOMSelectors.card.insertAdjacentHTML(
     "beforeend",
     `<h2 class="cratetitle">${element.name}</h2> <img src="${element.url}" alt="">  <h4> Collection: ${element.collection}</h4> <h5>${element.dropped}</h5> <h5> Crate series: ${element.series}</h5> <p class="cratedesc">${element.description}</p>`
   )
-);
+); */
 
 /* const crates = {
   //  allcrates: null,
@@ -57,6 +57,18 @@ data.forEach((element) =>
 }; */
 
 const crates = {
+  allcrates: function () {
+    DOMSelectors.card.innerHTML = "";
+    data.forEach((element) =>
+      DOMSelectors.card.insertAdjacentHTML(
+        "beforeend",
+        `
+        <div class = "cratecard"><h2 class="cratetitle">${element.name}</h2> <img class="crateimage" src="${element.url}" alt="">  <h4 class = "cratecollection"> Collection: ${element.collection}</h4> <h5 class="cratedropped">${element.dropped}</h5> <h5 class = "crateseries"> Crate series: ${element.series}</h5> <p class="cratedesc">${element.description}</p>
+        </div>
+        `
+      )
+    );
+  },
   seasonalcrates: function () {
     let season = data.filter((element) => element.kind.includes(`Seasonal`));
     DOMSelectors.card.innerHTML = "";
@@ -65,7 +77,9 @@ const crates = {
       DOMSelectors.card.insertAdjacentHTML(
         "beforeend",
         `
-        <h2 class="cratetitle">${element.name}</h2> 
+
+        <div class = "cratecard"><h2 class="cratetitle">${element.name}</h2> <img class="crateimage" src="${element.url}" alt="">  <h4 class = "cratecollection"> Collection: ${element.collection}</h4> <h5 class="cratedropped">${element.dropped}</h5> <h5 class = "crateseries"> Crate series: ${element.series}</h5> <p class="cratedesc">${element.description}</p>
+        </div>
         `
       );
     });
@@ -81,7 +95,9 @@ const crates = {
       DOMSelectors.card.insertAdjacentHTML(
         "beforeend",
         `
-        <h2 class="cratetitle">${element.name}</h2> 
+
+        <div class = "cratecard"><h2 class="cratetitle">${element.name}</h2> <img class="crateimage" src="${element.url}" alt="">  <h4 class = "cratecollection"> Collection: ${element.collection}</h4> <h5 class="cratedropped">${element.dropped}</h5> <h5 class = "crateseries"> Crate series: ${element.series}</h5> <p class="cratedesc">${element.description}</p>
+        </div>
         `
       );
     });
@@ -95,7 +111,9 @@ const crates = {
       DOMSelectors.card.insertAdjacentHTML(
         "beforeend",
         `
-        <h2 class="cratetitle">${element.name}</h2> 
+
+        <div class = "cratecard"><h2 class="cratetitle">${element.name}</h2> <img class="crateimage" src="${element.url}" alt="">  <h4 class = "cratecollection"> Collection: ${element.collection}</h4> <h5 class="cratedropped">${element.dropped}</h5> <h5 class = "crateseries"> Crate series: ${element.series}</h5> <p class="cratedesc">${element.description}</p>
+        </div>
         `
       );
     });
@@ -108,7 +126,8 @@ const crates = {
       DOMSelectors.card.insertAdjacentHTML(
         "beforeend",
         `
-        <h2 class="cratetitle">${element.name}</h2> 
+        <div class = "cratecard"><h2 class="cratetitle">${element.name}</h2> <img class="crateimage" src="${element.url}" alt="">  <h4 class = "cratecollection"> Collection: ${element.collection}</h4> <h5 class="cratedropped">${element.dropped}</h5> <h5 class = "crateseries"> Crate series: ${element.series}</h5> <p class="cratedesc">${element.description}</p>
+        </div>
         `
       );
     });
@@ -130,6 +149,11 @@ DOMSelectors.active.addEventListener("click", function () {
 DOMSelectors.retired.addEventListener("click", function () {
   crates.retiredcrates();
 });
+
+DOMSelectors.all.addEventListener("click", function () {
+  crates.allcrates();
+});
+crates.allcrates();
 /* function seasonalcrates() {
   let seasonalcrates = data.filter((element) => element.kind === "Seasonal");
   DOMSelectors.card.innerHTML = "";
@@ -158,7 +182,7 @@ ${data.stats.series}</p>
 );
  */
 
-function mightwork() {
+/* function mightwork() {
   let monkey = data.filter((element) => element.kind.includes(`Seasonal`));
   DOMSelectors.card.innerHTML = "";
   monkey.forEach((element) =>
@@ -167,3 +191,4 @@ function mightwork() {
 }
 
 mightwork();
+ */

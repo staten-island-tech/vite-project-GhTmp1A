@@ -113,3 +113,46 @@ button:focus-visible {
   font-size: 60px;
   text-align: center;
 } */
+
+
+html,
+body,
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-size: 62.5%;
+    font-family: 'Finlandica', sans-serif;
+    
+    
+}
+
+.buttons{
+  text-align: center;
+  font-size: 6.5rem;
+  margin: 2rem;
+}
+
+.button{
+  border: solid 5px black;
+  padding: 3px;
+  margin: 4.5rem;
+}
+.cratecards{
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;  
+  margin: 0px;
+}
+
+
+.cratecard{
+  border: solid 5px black;
+  font-size: 3rem;
+  width: 55rem;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  
+}
