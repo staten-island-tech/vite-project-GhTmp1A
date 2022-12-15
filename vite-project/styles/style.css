@@ -120,8 +120,7 @@ body,
 *{
     margin:0;
     padding:0;
-    box-sizing:border-box;
-    font-size: 62.5%;
+    font-size: 60%;
     font-family: 'Finlandica', sans-serif;
     
     
@@ -138,12 +137,8 @@ body,
   padding: 3px;
   margin: 4.5rem;
 }
-.cratecards{
-
-  justify-content: center;
-  align-items: center;
-  text-align: center;  
-  margin: 0px;
+#cratecards{
+  flex-wrap: wrap;
 }
 
 
@@ -151,8 +146,45 @@ body,
   border: solid 5px black;
   font-size: 3rem;
   width: 55rem;
-  margin: 0px;
-  display: flex;
-  flex-direction: column;
+  margin: 2rem;
+  justify-content: space-between;
   
+  
+}
+
+.cratedesc{
+  padding: 8px;
+  border: solid 5px black;
+}
+
+.crateseries{
+  padding: .5rem;
+  border: solid 5px black;
+
+  margin: 0px;
+}
+
+.cratedropped{
+  padding: 1.5rem;
+  margin: 0px;
+  border: solid 5px black;
+}
+
+.cratecollection{
+  padding: 1.5rem;
+  margin: 0px;
+  font-size: 3.5rem;
+  border: solid 5px black;
+}
+
+.cratetitle{
+  padding: 1.5rem;
+  margin: 0px;
+  border: solid 5px black;
+}
+
+.crateimage{
+padding: 0px;
+align-items: center;
+justify-content: center;
 }
