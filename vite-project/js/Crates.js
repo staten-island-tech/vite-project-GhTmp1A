@@ -177,8 +177,9 @@ const data = [
     collection: "Salvaged",
     dropped:
       "These particular crates were given to players much less frequently than a normal Mann Co. Supply Crate.",
-    series: 30,
-    description: "Description",
+    series: 50,
+    description:
+      "These crates were added into the normal item drop rate as a seperate crate from the standard Mannco Munition crates. Unlike the Munition crates, the Salvaged Mannco Supply Crate would give a weapon in strange quality, which tracks the amount of enemies defeated with the weapon. There are only several of these strange weapons per crate, with this specific series including a strangefier for the pan melee.",
     status: "Retired",
     url: "https://wiki.teamfortress.com/w/images/6/60/Backpack_Salvaged_Mann_Co._Supply_Crate.png",
   },
@@ -190,7 +191,8 @@ const data = [
       "This crate was randomly dropped to players during the Love and War update.",
     series: "seriesless",
 
-    description: "Description",
+    description:
+      "This crate would give one taunt from a collection of taunts released in the Love and War update. A key from the Mannco store is required to open this crate. The crate is no longer active, however, and as a result can now only be obtained through purchase on the Steam Community Market.",
     status: "Retired",
     url: "https://wiki.teamfortress.com/w/images/b/b1/Backpack_Mann_Co._Audition_Reel.png",
   },
@@ -201,7 +203,8 @@ const data = [
     dropped:
       "This crate can be bought from the mannco store at any time. It does not require a key to open.",
     series: "seriesless",
-    description: "Description",
+    description:
+      "This crate can be bought from the Mannco store, and is one of the only crates in the game that does not require a key to open. The crate itself contains one random cosmetic item exclusively equippable by Medic.",
     status: "Active",
     url: "https://wiki.teamfortress.com/w/images/8/8a/Backpack_Unlocked_Cosmetic_Crate_Medic.png",
   },
