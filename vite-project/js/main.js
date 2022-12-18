@@ -154,41 +154,13 @@ DOMSelectors.all.addEventListener("click", function () {
   crates.allcrates();
 });
 crates.allcrates();
-/* function seasonalcrates() {
-  let seasonalcrates = data.filter((element) => element.kind === "Seasonal");
-  DOMSelectors.card.innerHTML = "";
-  seasonalcrates.forEach((element) =>
-    DOMSelectors.card.innerHTML(
-      "afterend",
-      `<h2 class="cratetitle">${element.name}</h2> <img src="${element.url}" alt="">  <h4> Collection: ${element.collection}</h4> <h5>${element.dropped}</h5> <h5> Crate series: ${element.series}</h5> <p class="cratedesc">${element.description}</p>`
-    )
-  );
-}
 
-DOMSelectors.seasonal.addEventListener("click", function () {
-  seasonalcrates();
-}); */
-
-/* DOMSelectors.DOMSelectors.display.insertAdjacentHTML(
-  "afterend",
-  `
-<div id="crate">
-<h2 classs="cratename">${data.name}</h2>
-<p class="cratestats">${data.stats.collection}
-${data.stats.dropped}
-${data.stats.series}</p>
-</div>
-`
-);
- */
-
-/* function mightwork() {
-  let monkey = data.filter((element) => element.kind.includes(`Seasonal`));
-  DOMSelectors.card.innerHTML = "";
-  monkey.forEach((element) =>
-    DOMSelectors.card.insertAdjacentHTML("beforeend", `<p>${element.name}</p>`)
-  );
-}
-
-mightwork();
- */
+document.querySelector("#redblu").addEventListener("click", function () {
+  if (document.body.classList.contains("RED")) {
+    document.body.classList.add("RED");
+    document.body.classList.remove("BLU");
+  } else {
+    document.body.classList.add("BLU");
+    document.body.classList.remove("RED");
+  }
+});

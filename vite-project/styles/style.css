@@ -122,20 +122,29 @@ body,
     padding:0;
     font-size: 62.5%;
     font-family: 'Finlandica', sans-serif;
-    
-    
+}
+
+body{
+  background-color: var(--secondary);
+  font-family: 'Anton', sans-serif;
+
 }
 
 .buttons{
   text-align: center;
   font-size: 6.5rem;
   margin: 2rem;
+  
+
+  
 }
 
 .headeranswer{
-  background-image: url(https://wiki.teamfortress.com/w/images/8/83/Yourpropertyjustgotdamagedbysaxtonhale.png);
+
   font-size: 9rem;
   margin: 3rem;
+  padding: 0px;
+  background-image: url(/vite-project/public/tf2contract.png);
 }
 
 .h4answer{
@@ -147,11 +156,16 @@ body,
 .panswer{
   font-size: 2.3rem;
   box-sizing: border-box;
-  padding: 4.5px;
+  padding: 2rem ;
+  box-sizing: border-box;
 }
 
 .answer{
  border-bottom: solid red 15px;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position-y: 30%;
+ 
 }
 
 .button{
@@ -167,12 +181,13 @@ body,
 
 
 .cratecard{
-  border: solid 10px black;
+  border: solid 10px --primary;
   border-radius: 5px;
   font-size: 3rem;
   width: 55rem;
   margin: 3rem;
   justify-content: center;
+  background-color: var(--primary);
   
   
 }
@@ -207,4 +222,49 @@ body,
 padding: 3px;
 align-items: center;
 justify-content: center;
+}
+
+:root {
+  --team-red: #B8383B;
+  --team-red-light: #FB524F;
+  --team-blu: #5885A2;
+  --team-blu-light: #99C2D8;
+  --black: #000;
+  --gray: #353535;
+
+  /* Intentions */
+  --primary: var(--team-red);
+  --secondary: var(--team-red-light);
+
+
+
+
+}
+
+.RED{
+  --primary: var(--team-red);
+  --secondary: var(--team-red-light);
+}
+
+.BLU{
+  --primary:var(--team-blu);
+  --secondary:var(--team-blu-light);
+}
+
+.button, .button:link, .button:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  margin: 1rem auto;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10rem;
+  transition: all 0.2s;
+}
+
+.button:hover{
+  transform: translateY(-2px);
+  box-shadow: var(--primary) 2px 2px 2px .25rem;
+
 }
