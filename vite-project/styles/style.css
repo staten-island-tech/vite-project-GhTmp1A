@@ -134,23 +134,22 @@ body{
   text-align: center;
   font-size: 6.5rem;
   margin: 2rem;
-  
+}
 
-  
+.whole{
+
 }
 
 .headeranswer{
 
   font-size: 9rem;
-  margin: 3rem;
   padding: 0px;
-  background-image: url(/vite-project/public/tf2contract.png);
 }
 
 .h4answer{
   margin: 0px;
   font-size: 1rem;
-  margin: 1rem;
+
 }
 
 .panswer{
@@ -161,12 +160,10 @@ body{
 }
 
 .answer{
- border-bottom: solid red 15px;
- background-repeat: no-repeat;
- background-size: cover;
- background-position-y: 30%;
- 
+  background-color: var(--third);
+ border-bottom: solid var(--primary) 15px;
 }
+
 
 .button{
   border: solid 5px black;
@@ -181,7 +178,7 @@ body{
 
 
 .cratecard{
-  border: solid 10px --primary;
+  border: solid 2px var(--third);
   border-radius: 5px;
   font-size: 3rem;
   width: 55rem;
@@ -193,7 +190,7 @@ body{
 }
 
 .cratedesc{
-  padding: 8px;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -227,14 +224,17 @@ justify-content: center;
 :root {
   --team-red: #B8383B;
   --team-red-light: #FB524F;
+  --team-red-lighter: #ffcccb;
   --team-blu: #5885A2;
   --team-blu-light: #99C2D8;
+  --team-blu-lighter:#dde9f0;
   --black: #000;
   --gray: #353535;
 
   /* Intentions */
   --primary: var(--team-red);
   --secondary: var(--team-red-light);
+  --third: var(--team-red-lighter);
 
 
 
@@ -244,11 +244,13 @@ justify-content: center;
 .RED{
   --primary: var(--team-red);
   --secondary: var(--team-red-light);
+  --third: var(--team-red-lighter);
 }
 
 .BLU{
   --primary:var(--team-blu);
   --secondary:var(--team-blu-light);
+  --third: var(--team-blu-lighter);
 }
 
 .button, .button:link, .button:visited {
@@ -265,6 +267,8 @@ justify-content: center;
 
 .button:hover{
   transform: translateY(-2px);
+  color: var(--primary);
   box-shadow: var(--primary) 2px 2px 2px .25rem;
+  border: solid var(--secondary) 1px;
 
 }

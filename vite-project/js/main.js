@@ -156,11 +156,13 @@ DOMSelectors.all.addEventListener("click", function () {
 crates.allcrates();
 
 document.querySelector("#redblu").addEventListener("click", function () {
-  if (document.body.classList.contains("RED")) {
+  if (document.body.classList.contains("BLU")) {
     document.body.classList.add("RED");
     document.body.classList.remove("BLU");
+    document.getElementById("redblu").innerHTML = `BLU`;
   } else {
     document.body.classList.add("BLU");
     document.body.classList.remove("RED");
+    document.getElementById("redblu").innerHTML = `RED`;
   }
 });
