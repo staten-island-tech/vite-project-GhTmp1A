@@ -163,7 +163,7 @@ body{
 
 .answer{
   background-color: var(--third);
- border-bottom: solid var(--primary) 15px;
+ border: solid var(--primary) 10px;
  border-top-left-radius: 5px;
  border-top-right-radius: 5px;
 }
